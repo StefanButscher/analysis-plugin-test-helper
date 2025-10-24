@@ -264,11 +264,14 @@ To add a test for a new rule, do the following:
 
 7. For this branch run `mvn clean install`
 
+8.  get npm by sudo 
+
 
 
 
 
    
+
 
 
 
