@@ -154,4 +154,124 @@ To add a test for a new rule, do the following:
 - Add a new sample file to the `__test_files__` directory, then update:
 1. `ruleNameToTestFile` - Use ESLint rule name as key and path to file as value
 2. `eslintRuleNameToAnalysisName` - Use ESLint rule name as key and analysis plugin rule name as value
+
 3. `RULES_TO_BE_TEST` - Add the ESLint rule name to this slice, so it will be included in the test suite
+
+### Steps on a Linux machine
+
+0. Store your token `git config credential.helper store`
+1. clone the repo
+2. Call `cd /.m2 (maven settings)
+3. touch settings.xml
+4. Set xml
+`
+<settings>
+    <!--  Id: com.sap:artifactory:1.0.0:settings.xml  -->
+    <mirrors>
+        <mirror>
+            <id>mirror1</id>
+            <url>
+                https://int.repositories.cloud.sap/artifactory/build-milestones/
+            </url>
+            <mirrorOf>*,!artifactory</mirrorOf>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>release.build</id>
+            <repositories>
+                <repository>
+                    <id>artifactory</id>
+                    <url>
+                        https://int.repositories.cloud.sap/artifactory/build-releases/
+                    </url>
+                </repository>
+            </repositories>
+            <properties>
+                <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
+                <tycho.localArtifacts>ignore</tycho.localArtifacts>
+            </properties>
+        </profile>
+        <profile>
+            <id>milestone.build</id>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>artifactory</id>
+                    <url>
+                        https://int.repositories.cloud.sap/artifactory/build-milestones/
+                    </url>
+                </pluginRepository>
+            </pluginRepositories>
+            <repositories>
+                <repository>
+                    <id>artifactory</id>
+                    <url>
+                        https://int.repositories.cloud.sap/artifactory/build-milestones/
+                    </url>
+                </repository>
+            </repositories>
+            <properties>
+                <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
+                <tycho.localArtifacts>ignore</tycho.localArtifacts>
+            </properties>
+        </profile>
+        <profile>
+            <id>snapshot.build</id>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>artifactory</id>
+                    <url>
+                        https://int.repositories.cloud.sap/artifactory/build-snapshots/
+                    </url>
+                </pluginRepository>
+            </pluginRepositories>
+            <repositories>
+                <repository>
+                    <id>artifactory</id>
+                    <url>
+                        https://int.repositories.cloud.sap/artifactory/build-snapshots/
+                    </url>
+                </repository>
+            </repositories>
+            <properties>
+                <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
+                <tycho.localArtifacts>ignore</tycho.localArtifacts>
+            </properties>
+        </profile>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>https://sonar.tools.sap</sonar.host.url>
+                <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
+                <tycho.localArtifacts>ignore</tycho.localArtifacts>
+            </properties>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>snapshot.build</activeProfile>
+    </activeProfiles>
+    <pluginGroups>
+        <pluginGroup>com.sap.ldi</pluginGroup>
+    </pluginGroups>
+</settings>
+`
+5. For the repo run `mvn clean install`
+
+6. switch to `IGNORErel2-1`
+
+7. For this branch run `mvn clean install`
+
+
+
+
+
+   
+
+
+
+
+
+
