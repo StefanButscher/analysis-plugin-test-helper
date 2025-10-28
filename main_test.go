@@ -47,6 +47,9 @@ var ruleNameToTestFile = map[string]string{
 	"sap-unescape-write":                         "__test_files__/sap-unescape-write.js",
 	"sap-controller-hook-no-callback-signature":  "__test_files__/sap-controller-hook-no-callback-signature.js",
 	"sap-controller-hook-bad-callback-signature": "__test_files__/sap-controller-hook-bad-callback-signature.js",
+	"sap-js-webstorage":                          "__test_files__/sap-js-webstorage.js",
+	"sap-js-upload-declare":                      "__test_files__/sap-js-upload-declare.js",
+	"sap-js-controller-hook-name-convention":     "__test_files__/sap-js-controller-hook-name-convention.js",
 }
 
 var eslintRuleNameToAnalysisName = map[string]string{
@@ -62,6 +65,9 @@ var eslintRuleNameToAnalysisName = map[string]string{
 	"sap-unescape-write":                         "JS_UNESCAPED_WRITE",
 	"sap-controller-hook-no-callback-signature":  "JS_CONTROLLER_HOOK_NO_CALLBACK_SIGNATURE",
 	"sap-controller-hook-bad-callback-signature": "JS_CONTROLLER_HOOK_BAD_CALLBACK_SIGNATURE",
+	"sap-js-webstorage":                          "JS_WEBSTORAGE",
+	"sap-js-upload-declare":                      "JS_UPLOAD_DECLARE",
+	"sap-js-controller-hook-name-convention":     "JS_CONTROLLER_HOOK_NAME_CONVENTION",
 }
 
 var timestamp = time.Now().Format("20060102-150405")
@@ -78,7 +84,10 @@ var RULES_TO_BE_TEST = []string{
 	//"sap-core-model-usage",
 	//"sap-unescape-write",
 	//"sap-controller-hook-no-callback-signature",
-	"sap-controller-hook-bad-callback-signature",
+	//"sap-controller-hook-bad-callback-signature",
+	//"sap-js-webstorage",
+	//"sap-js-upload-declare",
+	"sap-js-controller-hook-name-convention",
 }
 
 func TestRules(t *testing.T) {
