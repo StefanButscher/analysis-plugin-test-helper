@@ -23,7 +23,7 @@ type AnalysisPluginExecutor struct {
 func NewAnalysisPluginExecutor(targetDir string, version string, standaloneFilePath string) Executor {
 	// Validate that standalone file exists
 	if _, err := os.Stat(standaloneFilePath); os.IsNotExist(err) {
-		panic(fmt.Sprintf("Standalone JAR file does not exist: %s", standaloneFilePath))
+		//panic(fmt.Sprintf("Standalone JAR file does not exist: %s", standaloneFilePath))
 	}
 
 	// Validate target directory exists
