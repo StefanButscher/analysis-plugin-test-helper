@@ -6,6 +6,13 @@ sap.ui.core.UIComponent.extend("i2d.pp.prodorder.release.appref.Component", {
         var recurseMeCorrect = correctLocalization;
         var incorrectRecurseMeXXerrorXX = incorrectStringValueXXerrorXX;
 
+        Object.setText(XXerrorXX + "hi");
+        Object.setText(i2d.pp.AtRisk + XXerrorXX);
+        Object.setText(doing_fancy_stuff_with_operators | "XXerrorXX- too bad you used a string literal here");
+        Object.setText("not translated-XXerrorXX");
+        Object.setText(incorrectRecurseMeXXerrorXX);
+        Object.setText(incorrectStringValueXXerrorXX);
+        
         // The incorrect ones
         setText(XXerrorXX + "hi");
         setText(i2d.pp.AtRisk + XXerrorXX);
