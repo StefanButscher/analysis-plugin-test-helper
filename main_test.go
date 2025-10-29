@@ -12,27 +12,27 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-var targetDir = "/Users/PROVIDE_YOUR_PATH/TestApps/ca.infra.testapp"
+var targetDir = "/home/d050449/Documents/ca.infra.testapp"
 
 // Pure Analysis Plugin
 var analysisPluginA = executor.NewAnalysisPluginExecutor(
 	targetDir,
-	"2.1.8-A",
-	"/Users/PROVIDE_YOUR_PATH/fiori-js-analysis-standalone-A.jar",
+	"2.1.9",
+	"",
 )
 
 // Analysis Plugin with Disabled JS Checks
 var analysisPluginB = executor.NewAnalysisPluginExecutor(
 	targetDir,
-	"2.1.8-B",
-	"/Users/PROVIDE_YOUR_PATH/fiori-js-analysis-standalone-B.jar",
+	"2.1.9-b",
+	"",
 )
 
 var eslintPlugin = executor.NewEsLintExecutor(
 	targetDir,
-	"/Users/PROVIDE_YOUR_PATH/eslint-plugin-fiori-custom/configure.eslintrc",
-	"/Users/PROVIDE_YOUR_PATH/eslint-plugin-fiori-custom/lib/rules",
-	"/Users/PROVIDE_YOUR_PATH/ca.infra.testapp/node_modules/eslint/bin/eslint.js",
+	"/home/d050449/Documents/eslint-plugin-fiori-custom/configure.eslintrc",
+	"/home/d050449/Documents/eslint-plugin-fiori-custom/lib/rules",
+	"/home/d050449/Documents/eslint-plugin-fiori-custom/node_modules/eslint/bin/eslint.js",
 )
 
 var ruleNameToTestFile = map[string]string{
