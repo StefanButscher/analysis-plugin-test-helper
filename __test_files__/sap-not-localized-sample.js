@@ -18,7 +18,7 @@ sap.ui.core.UIComponent.extend("i2d.pp.prodorder.release.appref.Component", {
         obj.setHeaderText('This is a hardcoded string');
         obj.setPurpose('This is a hardcoded string');
 
-
+        obj.setPurpose("This is a hardcoded string");
 
         // the ok ones
 
@@ -31,7 +31,20 @@ sap.ui.core.UIComponent.extend("i2d.pp.prodorder.release.appref.Component", {
         obj.setText(correctLocalization);
         obj.setText(recurseMeCorrect);
 
+        // Example from analysis plugin
 
-        
+        // The incorrect ones
+        setText(XXerrorXX + "hi");
+        setText(i2d.pp.AtRisk + XXerrorXX);
+        setText(doing_fancy_stuff_with_operators | "XXerrorXX- too bad you used a string literal here");
+        setText("not translated-XXerrorXX");
+        setText(incorrectRecurseMeXXerrorXX);
+        setText(incorrectStringValueXXerrorXX);
+
+        // the ok ones
+        setText(doing_fancy_stuff_with_operators | lets_assume_you_know_what_youre_doing);
+        setText(recurseMeCorrect);
+        setText("{HI}");
+        setText(correctLocalization);
     }
 });
