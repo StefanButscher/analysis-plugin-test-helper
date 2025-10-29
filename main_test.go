@@ -5,33 +5,34 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 	"time"
 
 	"github.com/stretchr/testify/assert"
 )
 
-var targetDir = "/home/d050449/Documents/ca.infra.testapp"
+var targetDir = "/Users/PROVIDE_YOUR_PATH/TestApps/ca.infra.testapp"
 
 // Pure Analysis Plugin
 var analysisPluginA = executor.NewAnalysisPluginExecutor(
 	targetDir,
-	"2.1.9",
-	"",
+	"2.1.8-A",
+	"/Users/PROVIDE_YOUR_PATH/fiori-js-analysis-standalone-A.jar",
 )
 
 // Analysis Plugin with Disabled JS Checks
 var analysisPluginB = executor.NewAnalysisPluginExecutor(
 	targetDir,
-	"2.1.9-b",
-	"",
+	"2.1.8-B",
+	"/Users/PROVIDE_YOUR_PATH/fiori-js-analysis-standalone-B.jar",
 )
 
 var eslintPlugin = executor.NewEsLintExecutor(
 	targetDir,
-	"/home/d050449/Documents/eslint-plugin-fiori-custom/configure.eslintrc",
-	"/home/d050449/Documents/eslint-plugin-fiori-custom/lib/rules",
-	"/home/d050449/Documents/eslint-plugin-fiori-custom/node_modules/eslint/bin/eslint.js",
+	"/Users/PROVIDE_YOUR_PATH/eslint-plugin-fiori-custom/configure.eslintrc",
+	"/Users/PROVIDE_YOUR_PATH/eslint-plugin-fiori-custom/lib/rules",
+	"/Users/PROVIDE_YOUR_PATH/ca.infra.testapp/node_modules/eslint/bin/eslint.js",
 )
 
 var ruleNameToTestFile = map[string]string{
@@ -39,7 +40,7 @@ var ruleNameToTestFile = map[string]string{
 	"sap-no-origin":                              "__test_files__/sap-no-origin-sample.js",
 	"sap-not-localized":                          "__test_files__/sap-not-localized-sample.js",
 	"sap-concatenated-strings":                   "__test_files__/sap-concatenated-strings.js",
-	"sap-hardcoded-color":                        "__test_files__/sap-hardcoded-color.js",
+	"sap-no-hardcoded-color":                     "__test_files__/sap-hardcoded-color.js",
 	"sap-window-alert":                           "__test_files__/sap-window-alert.js",
 	"sap-console-log":                            "__test_files__/sap-console-log.js",
 	"sap-eval-used":                              "__test_files__/sap-eval-used.js",
@@ -47,7 +48,7 @@ var ruleNameToTestFile = map[string]string{
 	"sap-unescape-write":                         "__test_files__/sap-unescape-write.js",
 	"sap-controller-hook-no-callback-signature":  "__test_files__/sap-controller-hook-no-callback-signature.js",
 	"sap-controller-hook-bad-callback-signature": "__test_files__/sap-controller-hook-bad-callback-signature.js",
-	"sap-js-webstorage":                          "__test_files__/sap-js-webstorage.js",
+	"sap-no-localstorage":                        "__test_files__/sap-js-webstorage.js",
 	"sap-js-upload-declare":                      "__test_files__/sap-js-upload-declare.js",
 	"sap-js-controller-hook-name-convention":     "__test_files__/sap-js-controller-hook-name-convention.js",
 }
@@ -55,9 +56,9 @@ var ruleNameToTestFile = map[string]string{
 var eslintRuleNameToAnalysisName = map[string]string{
 	"sap-no-debugger":                            "JS_DEBUGGER_STATEMENT",
 	"sap-no-origin":                              "JS_ORIGIN_USED",
-	"sap-not-localized":                          "JS_NOT_LOCALIZED",
-	"sap-concatenated-strings":                   "JS_CONCATENATED_STRINGS",
-	"sap-hardcoded-color":                        "JS_HARDCODED_COLOR",
+	"sap-not-localized":                          "JS_NOT_LOCALIZED",        // Analysis plugin relied on a different sample - to discuss
+	"sap-concatenated-strings":                   "JS_CONCATENATED_STRINGS", // Eslint relied on different tests
+	"sap-no-hardcoded-color":                     "JS_HARDCODED_COLOR",      // Wrong eslint rule name
 	"sap-window-alert":                           "JS_WINDOW_ALERT",
 	"sap-console-log":                            "JS_CONSOLE_LOG",
 	"sap-eval-used":                              "JS_EVAL_USED",
@@ -65,7 +66,7 @@ var eslintRuleNameToAnalysisName = map[string]string{
 	"sap-unescape-write":                         "JS_UNESCAPED_WRITE",
 	"sap-controller-hook-no-callback-signature":  "JS_CONTROLLER_HOOK_NO_CALLBACK_SIGNATURE",
 	"sap-controller-hook-bad-callback-signature": "JS_CONTROLLER_HOOK_BAD_CALLBACK_SIGNATURE",
-	"sap-js-webstorage":                          "JS_WEBSTORAGE",
+	"sap-no-localstorage":                        "JS_WEBSTORAGE", // Wrong eslint rule name
 	"sap-js-upload-declare":                      "JS_UPLOAD_DECLARE",
 	"sap-js-controller-hook-name-convention":     "JS_CONTROLLER_HOOK_NAME_CONVENTION",
 }
@@ -73,11 +74,11 @@ var eslintRuleNameToAnalysisName = map[string]string{
 var timestamp = time.Now().Format("20060102-150405")
 
 var RULES_TO_BE_TEST = []string{
-	//"sap-no-debugger",
-	//"sap-no-origin",
-	//"sap-not-localized",
-	//"sap-concatenated-strings",
-	//"sap-hardcoded-color",
+	//"sap-no-debugger", // +
+	//"sap-no-origin",   // +
+	// "sap-not-localized", // +
+	// "sap-concatenated-strings", // +
+	"sap-no-hardcoded-color",
 	//"sap-window-alert",
 	//"sap-console-log",
 	//"sap-eval-used",
@@ -85,10 +86,13 @@ var RULES_TO_BE_TEST = []string{
 	//"sap-unescape-write",
 	//"sap-controller-hook-no-callback-signature",
 	//"sap-controller-hook-bad-callback-signature",
-	//"sap-js-webstorage",
-	//"sap-js-upload-declare",
-	"sap-js-controller-hook-name-convention",
+	// "sap-no-localstorage", // -> "sap-js-webstorage",
+	// "sap-js-upload-declare",
+	// "sap-js-controller-hook-name-convention",
 }
+
+var dateTime = time.Now().Format("02 Jan 06 15:04 MST")
+var dateDir = strings.ReplaceAll(dateTime, " ", "_")
 
 func TestRules(t *testing.T) {
 
@@ -105,7 +109,7 @@ func TestRules(t *testing.T) {
 		assert.NotEqual(t, ruleNameToTestFile[ruleName], "", "Test file path should be defined for rule: %s", ruleName)
 		assert.NotEqual(t, eslintRuleNameToAnalysisName[ruleName], "", "Analysis name should be defined for rule: %s", ruleName)
 
-		executionDir := filepath.Join("__executions__", fmt.Sprintf("%s-%s", testName, timestamp))
+		executionDir := filepath.Join("__executions__", dateDir, fmt.Sprintf("%s-%s", testName, timestamp))
 		err := os.MkdirAll(executionDir, 0755)
 		if err != nil {
 			t.Fatalf("Failed to create execution directory: %v", err)
@@ -118,7 +122,7 @@ func TestRules(t *testing.T) {
 		}
 		t.Run("Test Rule: "+ruleName, func(t *testing.T) {
 
-			/*	t.Run("Single file", func(t *testing.T) {
+			t.Run("Single file", func(t *testing.T) {
 				t.Run("AnalysisPluginA - single file", func(t *testing.T) {
 					execError, codeCheckErrors := RunChecksAgainstFile(executionDir, testName, analysisPluginA, filePath)
 					if execError != nil {
@@ -152,7 +156,7 @@ func TestRules(t *testing.T) {
 					targetError := FindEslintIssue(codeCheckErrors, ruleName)
 					assert.NotNilf(t, targetError, "Expected to find specific error for rule '%s'", ruleName)
 				})
-			})*/
+			})
 
 			t.Run("Project code checks", func(t *testing.T) {
 				// Copy test file
@@ -200,7 +204,6 @@ func TestRules(t *testing.T) {
 						t.Fatalf("Test failed due to execution error: %v", execErr)
 					}
 					assert.Greater(t, len(codeErrors), 0, "Expected at least one code check error from ESLint Plugin")
-
 					targetError := FindEslintIssue(codeErrors, ruleName)
 					assert.NotNilf(t, targetError, "Expected to find specific error for rule '%s'", ruleName)
 				})
@@ -220,7 +223,7 @@ func TestOneRule(t *testing.T) {
 	assert.NotEqual(t, ruleNameToTestFile[ruleName], "", "Test file path should be defined for rule: %s", ruleName)
 	assert.NotEqual(t, eslintRuleNameToAnalysisName[ruleName], "", "Analysis name should be defined for rule: %s", ruleName)
 
-	executionDir := filepath.Join("__executions__", fmt.Sprintf("%s-%s", testName, timestamp))
+	executionDir := filepath.Join("__executions__", dateDir, fmt.Sprintf("%s-%s", testName, timestamp))
 	err := os.MkdirAll(executionDir, 0755)
 	if err != nil {
 		t.Fatalf("Failed to create execution directory: %v", err)
@@ -232,7 +235,7 @@ func TestOneRule(t *testing.T) {
 		t.Fatalf("File path for rule '%s' not found", ruleName)
 	}
 
-	/*	t.Run("Single file", func(t *testing.T) {
+	t.Run("Single file", func(t *testing.T) {
 		t.Run("AnalysisPluginA - single file", func(t *testing.T) {
 			execError, codeCheckErrors := RunChecksAgainstFile(executionDir, testName, analysisPluginA, filePath)
 			if execError != nil {
@@ -266,7 +269,7 @@ func TestOneRule(t *testing.T) {
 			targetError := FindEslintIssue(codeCheckErrors, ruleName)
 			assert.NotNilf(t, targetError, "Expected to find specific error for rule '%s'", ruleName)
 		})
-	})*/
+	})
 
 	t.Run("Project code checks", func(t *testing.T) {
 		// Copy test file
