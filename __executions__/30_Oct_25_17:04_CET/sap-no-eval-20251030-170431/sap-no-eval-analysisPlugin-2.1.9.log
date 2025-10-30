@@ -1,0 +1,500 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.sap.fiori:ca.infra.testapp[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Infra Testapp 2602.0.29[m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.6.1:clean[m [1m(default-clean)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/d050449/Documents/ca.infra.testapp/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(default)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M3:enforce[m [1m(enforce-versions)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.141.0:parse-version[m [1m(parse-version)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(fiori-init)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.10:unpack[m [1m(fiori-dependencies)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Configured Artifact: com.sap.fiori:fnf-parent-pom:buildresources:1.202.3:zip
+[[1;34mINFO[m] Configured Artifact: com.sap.fiori:appdescriptor.schema.distributed:schema:1.79.0-1:zip
+[[1;34mINFO[m] Configured Artifact: com.sap.fiori:knownACH:knownACH:1.56.0:zip
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/fiori/fnf-parent-pom/1.202.3/fnf-parent-pom-1.202.3-buildresources.zip to /home/d050449/Documents/ca.infra.testapp/target/build-resources with includes "" and excludes ""
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/fiori/appdescriptor.schema.distributed/1.79.0-1/appdescriptor.schema.distributed-1.79.0-1-schema.zip to /home/d050449/Documents/ca.infra.testapp/target/code-checks-appdescriptor/distributed with includes "" and excludes ""
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/fiori/knownACH/1.56.0/knownACH-1.56.0-knownACH.zip to /home/d050449/Documents/ca.infra.testapp/target/code-checks-ach with includes "" and excludes ""
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.10:unpack-dependencies[m [1m(anaPlugResources-templates)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/suite/ui/generic/template/sap.suite.ui.generic.template/1.141.0/sap.suite.ui.generic.template-1.141.0.jar to /home/d050449/Documents/ca.infra.testapp/target/codeCheckResources with includes "**/ObjectPage/i18n/i18n.properties,**/ListReport/i18n/i18n.properties,**/lib/i18n/i18n.properties" and excludes ""
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/suite/ui/generic/template/sap.suite.ui.generic.template/1.141.0/sap.suite.ui.generic.template-1.141.0-testresources.jar to /home/d050449/Documents/ca.infra.testapp/target/codeCheckResources with includes "**/ObjectPage/i18n/i18n.properties,**/ListReport/i18n/i18n.properties,**/lib/i18n/i18n.properties" and excludes ""
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.10:unpack-dependencies[m [1m(anaPlugResources-ovp)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Unpacking /home/d050449/.m2/repository/com/sap/ovp/ovp-lib/1.141.0/ovp-lib-1.141.0.jar to /home/d050449/Documents/ca.infra.testapp/target/codeCheckResources with includes "**/sap/ovp/messagebundle.properties" and excludes ""
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(process-sources)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 4 files to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/build/webapp
+     [copy] Copying 46 files to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/build/webapp
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/build/webapp
+     [copy] Copying 4 files to /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp/webapp
+     [copy] Copying 46 files to /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp/webapp
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp/webapp
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/webXML
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/webXML
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/webXML
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/webXML
+     [copy] Copying 1 file to /home/d050449/Documents/ca.infra.testapp/target/webXML
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manalysis-plugin:2.1.9:rhino-transpile[m [1m(transpile-for-rhino)[m @ [36mca.infra.testapp[0;1m ---[m
+npm WARN config production Use `--omit=dev` instead.
+
+added 186 packages in 2s
+Transpiling from /home/d050449/Documents/ca.infra.testapp/webapp to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/src
+Transpiling from /home/d050449/Documents/ca.infra.testapp/webapp/test to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/test
+Finished transpiling to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/src:
+  Transpiled 12 JavaScript resources. Copied 39 other resources without modifications
+Finished transpiling to /home/d050449/Documents/ca.infra.testapp/target/analysis-input/test:
+  Transpiled 28 JavaScript resources. Copied 31 other resources without modifications
+[[1;34mINFO[m] Plugin execution took: 6042ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.141.0:write-properties[m [1m(write-properties)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.141.0:write-properties[m [1m(write-properties-m2e)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(fiori-copyright)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/d050449/Documents/ca.infra.testapp/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:copy-resources[m [1m(prepare-sources-package)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 39 resources
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.2:compile[m [1m(default-compile)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-coldwater-plugin:1.141.0:version-info[m [1m(create-version-info-xml)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] skipping execution
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/d050449/Documents/ca.infra.testapp/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.2:testCompile[m [1m(default-testCompile)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.20.1:test[m [1m(default-test)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mui5nodetools-maven-plugin:1.141.0:generate-package-json[m [1m(generate-package-json)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Plugin execution took: 56ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mui5nodetools-maven-plugin:1.141.0:generate-ui5-yaml[m [1m(generate-ui5-yaml)[m @ [36mca.infra.testapp[0;1m ---[m
+npm warn config production Use `--omit=dev` instead.
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'ava@6.0.1',
+npm warn EBADENGINE   required: { node: '^18.18 || ^20.8 || ^21' },
+npm warn EBADENGINE   current: { node: 'v22.13.1', npm: '10.9.2' }
+npm warn EBADENGINE }
+
+added 2 packages in 663ms
+Wrote ui5.yaml to /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp/ui5.yaml:
+specVersion: "3.1"
+type: application
+metadata:
+  name: ca.infra.testapp
+  copyright: >-
+    Copyright (C) 2009-${copyRightToYear} SAP SE or an SAP affiliate company.
+    All rights reserved.
+
+[[1;34mINFO[m] Plugin execution took: 1697ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mui5nodetools-maven-plugin:1.141.0:ui5-build[m [1m(run-ui5-build)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Start building UI5 project with type: application
+
+added 522 packages in 4s
+verb cli:middlewares:base using @ui5/cli version 4.0.26 (from /home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/bin/ui5.cjs)
+verb cli:middlewares:base using node version v22.13.1
+verb generateProjectGraph Creating project graph using npm provider...
+verb generateProjectGraph No workspace configuration file provided at /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp/ui5-workspace.yaml
+verb graph:Module Could not find any build manifest in module ca.infra.testapp
+verb graph:Module Configuration for module ca.infra.testapp is provided in YAML file at ui5.yaml
+verb specifications:types:Application Path mapping for application project ca.infra.testapp:
+verb specifications:types:Application   Physical root path: /home/d050449/Documents/ca.infra.testapp/target/ui5-build-tmp
+verb specifications:types:Application   Mapped to: webapp
+verb specifications:types:Application Namespace of project ca.infra.testapp is ca/infra/testapp (from manifest.json)
+verb graph:Module Module ca.infra.testapp contains project ca.infra.testapp
+verb graph:projectGraphBuilder Root project ca.infra.testapp qualified as application project for project graph
+verb graph:ProjectGraph Adding project: ca.infra.testapp
+verb graph:providers:NodePackageDependencies Resolving dependencies of ca.infra.testapp...
+verb graph:ProjectGraph Skipping resolution of optional dependencies since none have been declared
+verb graph:helpers:ui5Framework Root project ca.infra.testapp has no framework configuration. Nothing to do here
+info ProjectBuilder Preparing build for project ca.infra.testapp
+info ProjectBuilder   Target directory: /home/d050449/Documents/ca.infra.testapp/target/app
+verb ProjectBuilder Creating build context for project ca.infra.testapp...
+verb Build Task generateBundle is set to be explicitly skipped in definitions.
+verb ProjectBuilder Processing project ca.infra.testapp...
+info Project 1 of 1: ❯ Building application project ca.infra.testapp...
+info ca.infra.testapp Task 1 of 7 › Running task escapeNonAsciiCharacters...
+perf Build Task escapeNonAsciiCharacters finished in 15 ms
+verb ca.infra.testapp Task 1 of 7 ✔ Finished task escapeNonAsciiCharacters
+info ca.infra.testapp Task 2 of 7 › Running task replaceCopyright...
+perf Build Task replaceCopyright finished in 14 ms
+verb ca.infra.testapp Task 2 of 7 ✔ Finished task replaceCopyright
+info ca.infra.testapp Task 3 of 7 › Running task replaceVersion...
+perf Build Task replaceVersion finished in 7 ms
+verb ca.infra.testapp Task 3 of 7 ✔ Finished task replaceVersion
+info ca.infra.testapp Task 4 of 7 › Running task minify...
+verb builder:processors:minifier Creating workerpool with up to 2 workers (available CPU cores: 2)
+perf Build Task minify finished in 721 ms
+verb ca.infra.testapp Task 4 of 7 ✔ Finished task minify
+info ca.infra.testapp Task 5 of 7 › Running task generateFlexChangesBundle...
+verb builder:tasks:bundlers:generateFlexChangesBundle Collecting flexibility changes
+info builder:processors:bundlers:flexChangesBundler Changes collected. Number of changes: 3
+verb builder:tasks:bundlers:generateFlexChangesBundle Writing flexibility changes bundle
+verb builder:tasks:bundlers:generateFlexChangesBundle sap.ui.fl not found in manifest.json, inserting it...
+perf Build Task generateFlexChangesBundle finished in 19 ms
+verb ca.infra.testapp Task 5 of 7 ✔ Finished task generateFlexChangesBundle
+info ca.infra.testapp Task 6 of 7 › Running task generateComponentPreload...
+verb builder:tasks:bundlers:generateComponentPreload Generating ca/infra/testapp/Component-preload.js...
+verb builder:processors:bundlers:moduleBundler Generating bundle:
+verb builder:processors:bundlers:moduleBundler bundleDefinition: {
+  "name": "ca/infra/testapp/Component-preload.js",
+  "defaultFileTypes": [
+    ".js",
+    ".control.xml",
+    ".fragment.html",
+    ".fragment.json",
+    ".fragment.xml",
+    ".view.html",
+    ".view.json",
+    ".view.xml",
+    ".properties"
+  ],
+  "sections": [
+    {
+      "resolve": false,
+      "resolveConditional": false,
+      "renderer": false,
+      "sort": true,
+      "declareRawModules": false,
+      "mode": "preload",
+      "filters": [
+        "ca/infra/testapp/",
+        "ca/infra/testapp/**/manifest.json",
+        "ca/infra/testapp/changes/changes-bundle.json",
+        "ca/infra/testapp/changes/flexibility-bundle.json",
+        "!ca/infra/testapp/test/"
+      ]
+    }
+  ]
+}
+verb builder:processors:bundlers:moduleBundler bundleOptions: {
+  "optimize": true,
+  "sourceMap": true,
+  "decorateBootstrapModule": false,
+  "addTryCatchRestartWrapper": false,
+  "numberOfParts": 1,
+  "ignoreMissingModules": true
+}
+verb lbt:bundle:Resolver   Resolving bundle definition ca/infra/testapp/Component-preload.js
+verb lbt:bundle:Resolver     Resolving section of type preload
+verb lbt:resources:ResourceFilterList Filetypes: .js,.control.xml,.fragment.html,.fragment.json,.fragment.xml,.view.html,.view.json,.view.xml,.properties
+verb lbt:resources:ResourceFilterList   ca/infra/testapp/ --> include: /^ca\/infra\/testapp\/(?:[^/]+\/)*[^/]*(?:\.js|\.control\.xml|\.fragment\.html|\.fragment\.json|\.fragment\.xml|\.view\.html|\.view\.json|\.view\.xml|\.properties)$/
+verb lbt:resources:ResourceFilterList   ca/infra/testapp/**/manifest.json --> include: /^ca\/infra\/testapp\/(?:[^/]+\/)*manifest\.json$/
+verb lbt:resources:ResourceFilterList   ca/infra/testapp/changes/changes-bundle.json --> include: "ca/infra/testapp/changes/changes-bundle.json"
+verb lbt:resources:ResourceFilterList   ca/infra/testapp/changes/flexibility-bundle.json --> include: "ca/infra/testapp/changes/flexibility-bundle.json"
+verb lbt:resources:ResourceFilterList   !ca/infra/testapp/test/ --> exclude: /^ca\/infra\/testapp\/test\/(?:[^/]+\/)*[^/]*(?:\.js|\.control\.xml|\.fragment\.html|\.fragment\.json|\.fragment\.xml|\.view\.html|\.view\.json|\.view\.xml|\.properties)$/
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/core/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/suite/ui/generic/template/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/generic/app/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/m/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/comp/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/layout/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/uxap/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ndc/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/se/mi/plm/lib/attachmentservice/library.js - lazy: true
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/fl/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/suite/ui/generic/template/ListReport/Component.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/suite/ui/generic/template/ObjectPage/Component.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/se/mi/plm/lib/attachmentservice/attachment/Component.js - lazy: true
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ListReport/Component.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ObjectPage/Component.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ObjectPage/Component.js
+verb lbt:analyzer:SmartTemplateAnalyzer Ignoring missing module as per ResourcePool configuration: resource not found in pool: 'sap/suite/ui/generic/template/ListReport/Component.js'
+verb lbt:analyzer:SmartTemplateAnalyzer Ignoring missing module as per ResourcePool configuration: resource not found in pool: 'sap/suite/ui/generic/template/ObjectPage/Component.js'
+verb lbt:analyzer:SmartTemplateAnalyzer Ignoring missing module as per ResourcePool configuration: resource not found in pool: 'sap/suite/ui/generic/template/ObjectPage/Component.js'
+verb lbt:bundle:Resolver   Resolving bundle done
+verb lbt:bundle:Builder   Create 'ca/infra/testapp/Component-preload.js'
+verb lbt:bundle:Builder     Adding section of type preload
+verb lbt:bundle:Builder     ca/infra/testapp/localService/attachmentmockserver.js (1173,1182)
+verb lbt:bundle:Builder     ca/infra/testapp/localService/eshsearchmockserver.js (483,492)
+verb lbt:bundle:Builder     ca/infra/testapp/localService/featuretogglemockserver.js (497,506)
+verb lbt:bundle:Builder     ca/infra/testapp/localService/mockserver.js (9509,9518)
+verb lbt:bundle:Builder     ca/infra/testapp/localService/vatbfmockserver.js (1283,1292)
+verb lbt:bundle:Builder     ca/infra/testapp/model/formatter.js (376,378)
+verb lbt:bundle:Builder     ca/infra/testapp/Component.js (290,266)
+verb lbt:bundle:Builder     ca/infra/testapp/changes/flexibility-bundle.json (undefined,3014)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/controller/DetailsExtension.controller.js (28654,28612)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/controller/ListReportExtension.controller.js (22562,22517)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/AddDocReferencePopover.fragment.xml (478,460)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/LinkPopover.fragment.xml (907,745)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ListReportResponsiveTableCells.fragment.xml (176,166)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ListReportResponsiveTableColumns.fragment.xml (877,839)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ObjectPageReferenceDocResponsiveTableCells.fragment.xml (508,494)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ObjectPageReferenceDocResponsiveTableColumns.fragment.xml (1385,1305)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ObjectPageTransferItemResponsiveTableCells.fragment.xml (463,457)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/ObjectPageTransferItemResponsiveTableColumns.fragment.xml (685,633)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/dialogs/SelectJournalEntry.fragment.xml (2927,2170)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/fragments/dialogs/SelectSupplierInvoice.fragment.xml (2966,2211)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/view/ArticleHierarchy.view.xml (6814,6456)
+verb lbt:bundle:Builder     ca/infra/testapp/ext/view/ArticleHierarchyTest.view.xml (6814,6456)
+verb lbt:bundle:Builder     ca/infra/testapp/i18n/ListReport/C_CN_TaxInputInvcTP/i18n.properties (5753,5932)
+verb lbt:bundle:Builder     ca/infra/testapp/i18n/ObjectPage/C_CN_TaxInputInvcTP/i18n.properties (3271,3373)
+verb lbt:bundle:Builder     ca/infra/testapp/i18n/i18n.properties (1785,1860)
+verb lbt:bundle:Builder     ca/infra/testapp/manifest.json (15068,9194)
+verb lbt:bundle:Builder     ca/infra/testapp/migration-test/testfile-sap-controller-hook-missing-callback-signature.js (6642,6572)
+verb lbt:bundle:Builder     ca/infra/testapp/migration-test/testfile-sap-no-eval.js (2262,2227)
+verb lbt:bundle:Builder     ca/infra/testapp/testfilesversion40.js (204,171)
+perf Build Task generateComponentPreload finished in 420 ms
+verb ca.infra.testapp Task 6 of 7 ✔ Finished task generateComponentPreload
+info ca.infra.testapp Task 7 of 7 › Running task generateResourcesJson...
+verb lbt:resources:ResourceFilterList Filetypes: undefined
+verb builder:processors:resourceListCreator 	Found 75 resources
+verb lbt:resources:ResourceFilterList Filetypes: undefined
+verb lbt:resources:ResourceFilterList   **/*-dbg.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.controller.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.controller\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.designtime.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.designtime\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.support.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.support\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.view.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.view\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.fragment.js --> include: /^(?:[^/]+\/)*[^/]*-dbg\.fragment\.js$/
+verb lbt:resources:ResourceFilterList   **/*-dbg.css --> include: /^(?:[^/]+\/)*[^/]*-dbg\.css$/
+verb lbt:resources:ResourceFilterList   **/*.js.map --> include: /^(?:[^/]+\/)*[^/]*\.js\.map$/
+verb lbt:resources:ResourceFilterList Filetypes: undefined
+verb lbt:resources:ResourceFilterList   **/Component-preload.js --> include: /^(?:[^/]+\/)*Component-preload\.js$/
+verb lbt:resources:ResourceFilterList   **/library-preload.js --> include: /^(?:[^/]+\/)*library-preload\.js$/
+verb lbt:resources:ResourceFilterList   **/library-preload-dbg.js --> include: /^(?:[^/]+\/)*library-preload-dbg\.js$/
+verb lbt:resources:ResourceFilterList   **/library-preload.json --> include: /^(?:[^/]+\/)*library-preload\.json$/
+verb lbt:resources:ResourceFilterList   **/library-h2-preload.js --> include: /^(?:[^/]+\/)*library-h2-preload\.js$/
+verb lbt:resources:ResourceFilterList   **/designtime/library-preload.designtime.js --> include: /^(?:[^/]+\/)*designtime\/library-preload\.designtime\.js$/
+verb lbt:resources:ResourceFilterList   **/library-preload.support.js --> include: /^(?:[^/]+\/)*library-preload\.support\.js$/
+verb lbt:resources:ResourceFilterList   **/library-all.js --> include: /^(?:[^/]+\/)*library-all\.js$/
+verb lbt:resources:ResourceFilterList   **/library-all-dbg.js --> include: /^(?:[^/]+\/)*library-all-dbg\.js$/
+verb lbt:resources:ResourceFilterList Filetypes: undefined
+verb lbt:resources:ResourceFilterList   **/designtime/* --> include: /^(?:[^/]+\/)*designtime\/[^/]*$/
+verb lbt:resources:ResourceFilterList   **/*.designtime.js --> include: /^(?:[^/]+\/)*[^/]*\.designtime\.js$/
+verb lbt:resources:ResourceFilterList   **/*.control --> include: /^(?:[^/]+\/)*[^/]*\.control$/
+verb lbt:resources:ResourceFilterList   **/*.interface --> include: /^(?:[^/]+\/)*[^/]*\.interface$/
+verb lbt:resources:ResourceFilterList   **/*.type --> include: /^(?:[^/]+\/)*[^/]*\.type$/
+verb lbt:resources:ResourceFilterList   **/themes/*/*.less --> include: /^(?:[^/]+\/)*themes\/[^/]*\/[^/]*\.less$/
+verb lbt:resources:ResourceFilterList   **/library.templates.xml --> include: /^(?:[^/]+\/)*library\.templates\.xml$/
+verb lbt:resources:ResourceFilterList   **/library.dependencies.xml --> include: /^(?:[^/]+\/)*library\.dependencies\.xml$/
+verb lbt:resources:ResourceFilterList   **/library.dependencies.json --> include: /^(?:[^/]+\/)*library\.dependencies\.json$/
+verb lbt:resources:ResourceFilterList Filetypes: undefined
+verb lbt:resources:ResourceFilterList   **/*.support.js --> include: /^(?:[^/]+\/)*[^/]*\.support\.js$/
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/ext/controller/ListReportExtension-dbg.controller.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/ext/controller/ListReportExtension.controller.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/model/formatter-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/model/formatter.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/ext/controller/DetailsExtension-dbg.controller.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/ext/controller/DetailsExtension.controller.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/migration-test/testfile-sap-no-eval-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/migration-test/testfile-sap-no-eval.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/migration-test/testfile-sap-controller-hook-missing-callback-signature-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/migration-test/testfile-sap-controller-hook-missing-callback-signature.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/vatbfmockserver-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/vatbfmockserver.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/mockserver-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/mockserver.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/featuretogglemockserver-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/featuretogglemockserver.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/eshsearchmockserver-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/eshsearchmockserver.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/attachmentmockserver-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/localService/attachmentmockserver.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/testfilesversion40-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/testfilesversion40.js.map'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/Component-dbg.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/Component.js.map'
+verb lbt:resources:ResourceCollector   Found potential merged resource 'ca/infra/testapp/Component-preload.js'
+verb lbt:resources:ResourceCollector   Found potential debug resource 'ca/infra/testapp/Component-preload.js.map'
+verb lbt:analyzer:JSModuleAnalyzer Bundle name directive ca/infra/testapp/Component-preload.js
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/core/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/suite/ui/generic/template/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/generic/app/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/m/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/comp/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/layout/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/uxap/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ndc/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/se/mi/plm/lib/attachmentservice/library.js - lazy: true
+verb lbt:analyzer:ComponentAnalyzer Adding library dependency sap/ui/fl/library.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/suite/ui/generic/template/ListReport/Component.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/suite/ui/generic/template/ObjectPage/Component.js - lazy: false
+verb lbt:analyzer:ComponentAnalyzer Adding component dependency sap/se/mi/plm/lib/attachmentservice/attachment/Component.js - lazy: true
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/resource/ResourceModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:ComponentAnalyzer Derived model implementation dependency sap/ui/model/odata/v2/ODataModel.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ListReport/Component.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ObjectPage/Component.js
+verb lbt:analyzer:SmartTemplateAnalyzer Template app: Add dependency to template component sap/suite/ui/generic/template/ObjectPage/Component.js
+error lbt:analyzer:SmartTemplateAnalyzer An error occurred while analyzing template app ca/infra/testapp/Component.js (ignored): resource not found in pool: 'sap/suite/ui/generic/template/ListReport/Component.js'
+verb lbt:analyzer:SmartTemplateAnalyzer Error: resource not found in pool: 'sap/suite/ui/generic/template/ListReport/Component.js'
+    at LocatorResourcePool.findResource (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/resources/ResourcePool.js:204:10)
+    at TemplateComponentAnalyzer._analyzeTemplateComponent (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/analyzer/SmartTemplateAnalyzer.js:109:38)
+    at recursePage (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/analyzer/SmartTemplateAnalyzer.js:90:25)
+    at Array.forEach (<anonymous>)
+    at recurse (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/analyzer/SmartTemplateAnalyzer.js:98:30)
+    at TemplateComponentAnalyzer._analyzeManifest (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/analyzer/SmartTemplateAnalyzer.js:101:3)
+    at TemplateComponentAnalyzer.analyze (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/analyzer/SmartTemplateAnalyzer.js:60:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 1)
+    at async determineDependencyInfo (file:///home/d050449/Documents/ca.infra.testapp/target/ui5-build/node_modules/@ui5/cli/node_modules/@ui5/builder/lib/lbt/resources/ResourcePool.js:110:3)
+verb lbt:resources:ResourceCollector   Configured external resources filters (resources outside the namespace): (none)
+verb builder:processors:resourceListCreator 	Writing 'ca/infra/testapp/resources.json'
+perf Build Task generateResourcesJson finished in 121 ms
+verb ca.infra.testapp Task 7 of 7 ✔ Finished task generateResourcesJson
+verb Project 1 of 1: ✔ Finished building application project ca.infra.testapp
+verb ProjectBuilder Writing out files...
+info ProjectBuilder Build succeeded in 1.38 s
+info ProjectBuilder Executing cleanup tasks...
+verb builder:processors:minifier Attempt to terminate the workerpool...
+[[1;34mINFO[m] Plugin execution took: 7012ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manalysis-plugin:2.1.9:analysis[m [1m(analyse)[m @ [36mca.infra.testapp[0;1m ---[m
+[[1;34mINFO[m] Loading exemptions file from path: /home/d050449/Documents/ca.infra.testapp/myExemptions.xml
+[[1;34mINFO[m] IssueFindings will report findings for error types: [XML_DATE_TIME_CONTROL_BINDINGS, APPDESCRIPTOR_FIORI2ADAPTATION]
+[[1;34mINFO[m] Previous version will be evaluated from Artifactory.
+[[1;34mINFO[m] Checking against previous version: 2602.0.28
+[[1;34mINFO[m] GenericStringCheck will report the following values: []
+[[1;34mINFO[m] Found 56 service types in /localService/metadata.xml.
+[[1;34mINFO[m] Processing test folder: /home/d050449/Documents/ca.infra.testapp/target/analysis-input/test
+[[1;34mINFO[m] Controls from require/define found: 98
+[[1;34mINFO[m] Controls found in views/fragments: 196
+[[1;34mINFO[m] PREVIOUS_PROJECT_VERSION: Reporting :: Previous version checked for compatibility
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/PREVIOUS_PROJECT_VERSION.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: I18N_PROPERTIES_CRITICAL:High
+[[1;33mWARNING[m] In file src/i18n/ObjectPage/C_CN_TaxInputInvcTP/i18n.properties (10:0)
+[[1;33mWARNING[m] Internationalization :: Length declaration will lead to wrong text display.
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/I18N_PROPERTIES_CRITICAL.md
+[[1;31mERROR[m] 
+[[1;31mERROR[m] Quality issue: JS_EVAL_USED:Very High!
+[[1;31mERROR[m] In file src/migration-test/testfile-sap-no-eval.js (63:0)
+[[1;31mERROR[m] eval("location.hash.slice(1)");
+[[1;31mERROR[m] Fiori Architectural Guidelines :: JavaScript EVAL function use detected in the file
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_EVAL_USED.md
+[[1;31mERROR[m] 
+[[1;31mERROR[m] Quality issue: JS_EVAL_USED:Very High!
+[[1;31mERROR[m] In file src/migration-test/testfile-sap-no-eval.js (64:0)
+[[1;31mERROR[m] window.eval("location.hash.slice(1)")
+[[1;31mERROR[m] Fiori Architectural Guidelines :: JavaScript EVAL function use detected in the file
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_EVAL_USED.md
+[[1;31mERROR[m] 
+[[1;31mERROR[m] Quality issue: JS_EVAL_USED:Very High!
+[[1;31mERROR[m] In file src/migration-test/testfile-sap-no-eval.js (65:7)
+[[1;31mERROR[m] jQuery.globalEval
+[[1;31mERROR[m] Fiori Architectural Guidelines :: JavaScript EVAL function use detected in the file
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_EVAL_USED.md
+[[1;31mERROR[m] 
+[[1;31mERROR[m] Quality issue: JS_EVAL_USED:Very High!
+[[1;31mERROR[m] In file src/migration-test/testfile-sap-no-eval.js (66:11)
+[[1;31mERROR[m] jQuery.sap.globalEval
+[[1;31mERROR[m] Fiori Architectural Guidelines :: JavaScript EVAL function use detected in the file
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_EVAL_USED.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: XML_TABLE_ACCESSIBILITY:Medium
+[[1;33mWARNING[m] In file src/ext/fragments/LinkPopover.fragment.xml (4:91)
+[[1;33mWARNING[m] <Table class="sapUiNoMargin" fixedLayout="false" id="gs.fin.aptaxinvoice.popoverList" xmlns="sap.m"/>
+[[1;33mWARNING[m] Accessibility :: A table must define a custom header with a title element within
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/XML_TABLE_ACCESSIBILITY.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: XML_TABLE_ACCESSIBILITY:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchyTest.view.xml (50:133)
+[[1;33mWARNING[m] <Table fixedLayout="false" growing="true" growingThreshold="10" id="AHResponsiveTable" mode="{= ${ui&gt;/editable} ? 'SingleSelectLeft' : 'None'}" noDataText="{i18nAH&gt;noDataText}" selectionChange="onAHTableSelect" updateFinished="onTableUpdateFinished" xmlns="sap.m"/>
+[[1;33mWARNING[m] Accessibility :: A table must define a custom header with a title element within
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/XML_TABLE_ACCESSIBILITY.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: DG_MULTIPLE_OBJECT_IDENTIFIER:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchyTest.view.xml (88:130)
+[[1;33mWARNING[m] <ObjectIdentifier id="categoryCell-Display" text="{NodeCategory}" title="{NodeCategoryName}" visible="{IsActiveEntity}" xmlns="sap.m"/>
+[[1;33mWARNING[m] Design Guidelines :: A table entry should have only one object identifier
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/DG_MULTIPLE_OBJECT_IDENTIFIER.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: DG_MULTIPLE_OBJECT_IDENTIFIER:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchyTest.view.xml (94:147)
+[[1;33mWARNING[m] <ObjectIdentifier id="HierNodeCell-Display" text="{HierarchyNodeForEdit}" title="{HierarchyNodeForEdit_Text}" visible="{IsActiveEntity}" xmlns="sap.m"/>
+[[1;33mWARNING[m] Design Guidelines :: A table entry should have only one object identifier
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/DG_MULTIPLE_OBJECT_IDENTIFIER.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: XML_UI5_FORM_USAGE:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchyTest.view.xml (13:0)
+[[1;33mWARNING[m] Fiori Architectural Guidelines :: Invalid content for SimpleForm / Form / SmartForm.
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/XML_UI5_FORM_USAGE.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: XML_TABLE_ACCESSIBILITY:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchy.view.xml (50:133)
+[[1;33mWARNING[m] <Table fixedLayout="false" growing="true" growingThreshold="10" id="AHResponsiveTable" mode="{= ${ui&gt;/editable} ? 'SingleSelectLeft' : 'None'}" noDataText="{i18nAH&gt;noDataText}" selectionChange="onAHTableSelect" updateFinished="onTableUpdateFinished" xmlns="sap.m"/>
+[[1;33mWARNING[m] Accessibility :: A table must define a custom header with a title element within
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/XML_TABLE_ACCESSIBILITY.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: DG_MULTIPLE_OBJECT_IDENTIFIER:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchy.view.xml (88:130)
+[[1;33mWARNING[m] <ObjectIdentifier id="categoryCell-Display" text="{NodeCategory}" title="{NodeCategoryName}" visible="{IsActiveEntity}" xmlns="sap.m"/>
+[[1;33mWARNING[m] Design Guidelines :: A table entry should have only one object identifier
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/DG_MULTIPLE_OBJECT_IDENTIFIER.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: DG_MULTIPLE_OBJECT_IDENTIFIER:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchy.view.xml (94:147)
+[[1;33mWARNING[m] <ObjectIdentifier id="HierNodeCell-Display" text="{HierarchyNodeForEdit}" title="{HierarchyNodeForEdit_Text}" visible="{IsActiveEntity}" xmlns="sap.m"/>
+[[1;33mWARNING[m] Design Guidelines :: A table entry should have only one object identifier
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/DG_MULTIPLE_OBJECT_IDENTIFIER.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: XML_UI5_FORM_USAGE:Medium
+[[1;33mWARNING[m] In file src/ext/view/ArticleHierarchy.view.xml (13:0)
+[[1;33mWARNING[m] Fiori Architectural Guidelines :: Invalid content for SimpleForm / Form / SmartForm.
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/XML_UI5_FORM_USAGE.md
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Quality issue: JS_ODATA_MANUAL_TOKEN:Low
+[[1;33mWARNING[m] In file src/ext/controller/ListReportExtension.controller.js (279:6)
+[[1;33mWARNING[m] name: "x-csrf-token"
+[[1;33mWARNING[m] Security :: Manual XSRF Token processing is not advised due to complexity, shall be managed by the OData model instead
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_ODATA_MANUAL_TOKEN.md
+[[1;34mINFO[m] JS_DOM_MANIPULATION: Fiori Architectural Guidelines :: DOM manipulation detected!
+For details, see: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin/JS_DOM_MANIPULATION.md
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  24.629 s
+[[1;34mINFO[m] Finished at: 2025-10-30T17:19:53+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32mcom.sap.ca:analysis-plugin:2.1.9:analysis[m [1m(analyse)[m on project [36mca.infra.testapp[m: [1;31mThere are very high severity issues with this project, please check the log and this page to get information on how to fix: https://github.tools.sap/FIORI-PIPELINE/azure-pipeline-docs/tree/main/docs/codeCheckDocu/analysis-plugin[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

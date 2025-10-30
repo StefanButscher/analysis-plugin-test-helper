@@ -1,0 +1,347 @@
+
+/home/d050449/Documents/ca.infra.testapp/webapp/Component.js
+  1:1  warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy  sap-ui5-legacy-jquerysap-usage
+  3:1  warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy  sap-ui5-legacy-jquerysap-usage
+
+/home/d050449/Documents/ca.infra.testapp/webapp/ext/controller/DetailsExtension.controller.js
+     6:1   warning  Make use of sap.ui.define([...], function(...) {...} to load required dependencies. Legacy UI5 factories leading to synchronous loading  sap-ui5-legacy-factories
+    13:3   warning  Identifier 'Binding_SERVICE' is not in camel case                                                                                        camelcase
+    92:59  warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   107:61  warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   149:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   159:1   warning  This line has a length of 205. Maximum allowed is 200                                                                                    max-len
+   162:62  warning  Strings must use doublequote                                                                                                             quotes
+   163:61  warning  Strings must use doublequote                                                                                                             quotes
+   174:15  warning  'oExtAPI' is already defined                                                                                                             no-redeclare
+   174:15  warning  'oExtAPI' is assigned a value but never used                                                                                             no-unused-vars
+   205:27  warning  Strings must use doublequote                                                                                                             quotes
+   217:64  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   218:94  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   224:72  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   233:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   242:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   247:16  warning  Operator '=' must be spaced                                                                                                              space-infix-ops
+   249:37  warning  Strings must use doublequote                                                                                                             quotes
+   249:71  warning  Strings must use doublequote                                                                                                             quotes
+   263:1   warning  This line has a length of 201. Maximum allowed is 200                                                                                    max-len
+   266:55  warning  Strings must use doublequote                                                                                                             quotes
+   276:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   292:1   warning  This line has a length of 207. Maximum allowed is 200                                                                                    max-len
+   296:59  warning  Strings must use doublequote                                                                                                             quotes
+   306:1   warning  This line has a length of 209. Maximum allowed is 200                                                                                    max-len
+   310:62  warning  Strings must use doublequote                                                                                                             quotes
+   328:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   354:1   warning  This line has a length of 207. Maximum allowed is 200                                                                                    max-len
+   356:59  warning  Strings must use doublequote                                                                                                             quotes
+   376:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   412:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   454:42  warning  ["select"] is better written in dot notation                                                                                             dot-notation
+   454:87  warning  ["select"] is better written in dot notation                                                                                             dot-notation
+   464:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   482:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   498:14  warning  Expected literal to be on the right side of !==                                                                                          yoda
+   500:25  warning  Expected literal to be on the right side of !==                                                                                          yoda
+   514:61  warning  Unexpected trailing comma                                                                                                                comma-dangle
+   531:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   545:1   warning  This line has a length of 216. Maximum allowed is 200                                                                                    max-len
+   552:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   558:1   warning  This line has a length of 214. Maximum allowed is 200                                                                                    max-len
+   572:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   585:1   warning  This line has a length of 213. Maximum allowed is 200                                                                                    max-len
+   592:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   598:1   warning  This line has a length of 211. Maximum allowed is 200                                                                                    max-len
+   612:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   618:1   warning  This line has a length of 214. Maximum allowed is 200                                                                                    max-len
+   625:31  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   633:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   638:1   warning  This line has a length of 219. Maximum allowed is 200                                                                                    max-len
+   641:1   warning  This line has a length of 208. Maximum allowed is 200                                                                                    max-len
+   645:51  warning  Strings must use doublequote                                                                                                             quotes
+   646:22  warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+   646:41  warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+   648:62  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   659:18  warning  'i' is already defined                                                                                                                   no-redeclare
+   676:1   warning  This line has a length of 212. Maximum allowed is 200                                                                                    max-len
+   693:64  warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   707:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   711:1   warning  This line has a length of 209. Maximum allowed is 200                                                                                    max-len
+   720:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   726:1   warning  This line has a length of 211. Maximum allowed is 200                                                                                    max-len
+   733:31  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   740:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   745:1   warning  This line has a length of 216. Maximum allowed is 200                                                                                    max-len
+   749:1   warning  This line has a length of 208. Maximum allowed is 200                                                                                    max-len
+   753:53  warning  Strings must use doublequote                                                                                                             quotes
+   754:22  warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+   754:41  warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+   756:64  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   767:18  warning  'i' is already defined                                                                                                                   no-redeclare
+   784:1   warning  This line has a length of 209. Maximum allowed is 200                                                                                    max-len
+   801:66  warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   814:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   818:1   warning  This line has a length of 206. Maximum allowed is 200                                                                                    max-len
+   827:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   834:1   warning  This line has a length of 227. Maximum allowed is 200                                                                                    max-len
+   845:1   warning  This line has a length of 226. Maximum allowed is 200                                                                                    max-len
+   845:13  warning  'oSearchBar' is already defined                                                                                                          no-redeclare
+   853:13  warning  'oSTable' is already defined                                                                                                             no-redeclare
+   856:1   warning  This line has a length of 224. Maximum allowed is 200                                                                                    max-len
+   856:13  warning  'oSearchBar' is already defined                                                                                                          no-redeclare
+   876:6   warning  Missing JSDoc parameter description for 'oEvent'                                                                                         valid-jsdoc
+   878:33  warning  Method 'onReferenceDocUpdateFinished' has too many statements (55). Maximum allowed is 40                                                max-statements
+   878:33  warning  Method 'onReferenceDocUpdateFinished' has a complexity of 25. Maximum allowed is 20                                                      complexity
+   881:1   warning  This line has a length of 204. Maximum allowed is 200                                                                                    max-len
+   893:15  warning  'oExtAPI' is already defined                                                                                                             no-redeclare
+   909:9   warning  'oBindingCtx' is already defined                                                                                                         no-redeclare
+   911:11  warning  'isDisplayMode' is already defined                                                                                                       no-redeclare
+   919:9   warning  'oI18NModel' is already defined                                                                                                          no-redeclare
+   921:11  warning  'oResourceBundle' is already defined                                                                                                     no-redeclare
+   934:68  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   938:15  warning  Blocks are nested too deeply (5). Maximum allowed is 4                                                                                   max-depth
+   943:15  warning  Blocks are nested too deeply (5). Maximum allowed is 4                                                                                   max-depth
+   951:77  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   956:76  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   958:78  warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+   960:13  warning  Blocks are nested too deeply (5). Maximum allowed is 4                                                                                   max-depth
+   960:50  warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+   960:53  warning  Strings must use doublequote                                                                                                             quotes
+   961:15  warning  Blocks are nested too deeply (6). Maximum allowed is 4                                                                                   max-depth
+  1021:30  warning  Strings must use doublequote                                                                                                             quotes
+  1045:3   warning  Missing JSDoc for parameter 'oEvent'                                                                                                     valid-jsdoc
+  1076:32  warning  Strings must use doublequote                                                                                                             quotes
+  1100:3   warning  Missing JSDoc for parameter 'oEvent'                                                                                                     valid-jsdoc
+  1108:56  warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  1108:59  warning  Strings must use doublequote                                                                                                             quotes
+  1112:56  warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  1112:59  warning  Strings must use doublequote                                                                                                             quotes
+  1132:41  warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  1137:20  warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  1176:53  warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+
+/home/d050449/Documents/ca.infra.testapp/webapp/ext/controller/ListReportExtension.controller.js
+    1:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    2:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    3:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    4:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    5:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    6:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    7:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    8:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+    9:1    warning  Make use of sap.ui.define([...], function(...) {...} to load required dependencies. Legacy UI5 factories leading to synchronous loading  sap-ui5-legacy-factories
+   35:33   warning  'Map' is not defined                                                                                                                     no-undef
+   49:51   warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   64:52   warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+   81:51   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  100:37   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  107:104  warning  Operator '-' must be spaced                                                                                                              space-infix-ops
+  115:29   warning  ["CN_TaxInvcType"] is better written in dot notation                                                                                     dot-notation
+  117:29   warning  ["CN_TaxInvcType"] is better written in dot notation                                                                                     dot-notation
+  119:29   warning  ["CN_TaxInvcType"] is better written in dot notation                                                                                     dot-notation
+  150:112  warning  Operator '-' must be spaced                                                                                                              space-infix-ops
+  153:1    warning  This line has a length of 221. Maximum allowed is 200                                                                                    max-len
+  154:1    warning  This line has a length of 250. Maximum allowed is 200                                                                                    max-len
+  202:23   warning  Method 'onActUploadInvoice' has too many statements (62). Maximum allowed is 40                                                          max-statements
+  208:11   warning  Strings must use doublequote                                                                                                             quotes
+  297:15   warning  Strings must use doublequote                                                                                                             quotes
+  298:11   warning  Strings must use doublequote                                                                                                             quotes
+  299:11   warning  Strings must use doublequote                                                                                                             quotes
+  300:11   warning  Strings must use doublequote                                                                                                             quotes
+  337:8    warning  Identifier 'CN_TaxInvcUUID' is not in camel case                                                                                         camelcase
+  352:10   warning  Timeout with value > 0                                                                                                                   sap-timeout-usage
+  363:8    warning  Identifier 'CN_TaxInvcUUID' is not in camel case                                                                                         camelcase
+  378:10   warning  Timeout with value > 0                                                                                                                   sap-timeout-usage
+  437:21   warning  Method 'onUploadComplete' has too many statements (59). Maximum allowed is 40                                                            max-statements
+  475:10   warning  'aSInvoices' is assigned a value but never used                                                                                          no-unused-vars
+  579:25   warning  Do not use String as a constructor                                                                                                       no-new-wrappers
+  583:20   warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+  595:16   warning  'i' is already defined                                                                                                                   no-redeclare
+  596:61   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  596:64   warning  Strings must use doublequote                                                                                                             quotes
+  600:61   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  600:64   warning  Strings must use doublequote                                                                                                             quotes
+  608:15   warning  'i' is already defined                                                                                                                   no-redeclare
+  622:20   warning  'i' is already declared in the upper scope on line 583 column 15                                                                         no-shadow
+  631:17   warning  'i' is already defined                                                                                                                   no-redeclare
+  647:70   warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+  683:52   warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+  710:34   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  710:37   warning  Strings must use doublequote                                                                                                             quotes
+  734:65   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  734:68   warning  Strings must use doublequote                                                                                                             quotes
+  767:71   warning  Expected '!==' and instead saw '!='                                                                                                      eqeqeq
+  803:8    warning  Unexpected alias 'oNavParams' for 'this'                                                                                                 consistent-this
+  816:48   warning  A constructor name should not start with a lowercase letter                                                                              new-cap
+  833:13   warning  Operator '=' must be spaced                                                                                                              space-infix-ops
+  839:9    warning  'oNavParams' is already defined                                                                                                          no-redeclare
+  854:10   warning  'oItems' is already declared in the upper scope on line 850 column 8                                                                     no-shadow
+  855:14   warning  'i' is already declared in the upper scope on line 837 column 12                                                                         no-shadow
+  859:20   warning  Operator '==' must be spaced                                                                                                             space-infix-ops
+  859:20   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  861:9    warning  Blocks are nested too deeply (5). Maximum allowed is 4                                                                                   max-depth
+  861:53   warning  Expected '===' and instead saw '=='                                                                                                      eqeqeq
+  861:56   warning  Strings must use doublequote                                                                                                             quotes
+  944:19   warning  Unexpected whitespace before semicolon                                                                                                   semi-spacing
+  947:10   warning  Identifier 'CN_TaxInvcUUID' is not in camel case                                                                                         camelcase
+
+/home/d050449/Documents/ca.infra.testapp/webapp/migration-test/testfile-sap-controller-hook-missing-callback-signature.js
+    1:1   warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                                                            sap-ui5-legacy-jquerysap-usage
+    2:1   warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                                                            sap-ui5-legacy-jquerysap-usage
+    3:1   warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                                                            sap-ui5-legacy-jquerysap-usage
+    4:1   warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                                                            sap-ui5-legacy-jquerysap-usage
+   43:11  warning  Expected { after 'if' condition                                                                                                                                         curly
+   43:35  warning  Strings must use doublequote                                                                                                                                            quotes
+   45:11  warning  Expected { after 'else'                                                                                                                                                 curly
+   45:35  warning  Strings must use doublequote                                                                                                                                            quotes
+   59:7   warning  Expected { after 'if' condition                                                                                                                                         curly
+   63:14  warning  Strings must use doublequote                                                                                                                                            quotes
+   66:13  warning  Strings must use doublequote                                                                                                                                            quotes
+   67:1   warning  This line has a length of 204. Maximum allowed is 200                                                                                                                   max-len
+   67:13  warning  Strings must use doublequote                                                                                                                                            quotes
+   69:63  warning  Unexpected trailing comma                                                                                                                                               comma-dangle
+   91:5   error    Controller hook documentation does not contain callback signature                                                                                                       sap-controller-hook-missing-callback-signature
+   91:5   error    Controller hook documentation contains malformed callback signature: The callback is missing its full signature (ownertype and function name)                           sap-controller-hook-bad-callback-signature
+   91:5   error    Controller hook documentation contains malformed callback signature: No owner type maintained for callback                                                              sap-controller-hook-bad-callback-signature
+  108:5   warning  Missing JSDoc @returns for function                                                                                                                                     valid-jsdoc
+  112:36  warning  Strings must use doublequote                                                                                                                                            quotes
+  116:5   warning  Missing JSDoc @returns for function                                                                                                                                     valid-jsdoc
+  130:35  warning  'model' is not defined                                                                                                                                                  no-undef
+  133:7   error    Controller hook documentation contains malformed callback signature: Number of arguments in callback documentation does not match number of callback arguments in code  sap-controller-hook-bad-callback-signature
+  141:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  144:9   error    Controller hook documentation contains malformed callback signature: Documented callback not in source code                                                             sap-controller-hook-bad-callback-signature
+  153:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  155:8   error    Controller hook documentation contains malformed callback signature: No owner type maintained for callback                                                              sap-controller-hook-bad-callback-signature
+  164:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  167:7   error    The callback function name should follow the naming convention and starts with either 'extHook' (follow casing)                                                         sap-controller-hook-name-convention
+  176:35  warning  'model' is not defined                                                                                                                                                  no-undef
+  180:9   error    Controller hook documentation contains malformed callback signature: Callback parameters must document type and name                                                    sap-controller-hook-bad-callback-signature
+  189:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  192:9   error    Controller hook documentation contains malformed callback signature: Callback parameters must document type and name                                                    sap-controller-hook-bad-callback-signature
+  201:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  205:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  217:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  223:36  warning  'model' is not defined                                                                                                                                                  no-undef
+  235:2   warning  'oBinding' is already defined                                                                                                                                           no-redeclare
+  244:73  warning  Strings must use doublequote                                                                                                                                            quotes
+  251:20  error    Property oSource is a private member of sap.ui.base.Event!                                                                                                              sap-no-ui5base-prop
+  286:6   warning  Unexpected alias 'oController' for 'this'                                                                                                                               consistent-this
+  289:42  warning  Strings must use doublequote                                                                                                                                            quotes
+  290:46  warning  Strings must use doublequote                                                                                                                                            quotes
+  293:38  warning  Strings must use doublequote                                                                                                                                            quotes
+  319:58  warning  Strings must use doublequote                                                                                                                                            quotes
+  339:1   warning  This line has a length of 222. Maximum allowed is 200                                                                                                                   max-len
+  364:2   error    Expected an assignment or function call and instead saw an expression                                                                                                   no-unused-expressions
+  368:6   warning  jQuery.device or $.device are deprecated since 1.20! use the respective functions of sap.ui.Device                                                                      sap-no-jquery-device-api
+
+/home/d050449/Documents/ca.infra.testapp/webapp/migration-test/testfile-sap-no-debugger.js
+   1:57   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   2:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+   2:35   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   3:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+   3:60   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   4:1    warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy                                                             sap-ui5-legacy-jquerysap-usage
+   4:53   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   5:1    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   6:75   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   7:68   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   8:41   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+   9:29   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  10:46   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  11:25   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  12:27   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  13:42   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  14:30   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  15:11   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  16:21   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  17:55   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  18:44   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  19:48   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  20:95   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  21:135  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  22:139  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  23:134  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  24:138  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  25:104  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  26:104  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  27:106  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  28:106  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  29:106  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  30:108  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  31:107  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  32:11   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  33:1    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  34:50   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  35:1    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  36:32   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  37:123  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  38:40   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  39:75   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  40:14   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  41:29   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  42:120  error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  43:52   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  44:76   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  45:23   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  46:36   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  47:30   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  48:14   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  49:11   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  50:33   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  51:66   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  52:28   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  53:55   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  54:30   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  55:14   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  56:10   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  57:8    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  58:1    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  59:8    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  60:34   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  61:7    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  62:50   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  63:8    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  64:33   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  65:1    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  66:9    error    Debugger statement should not be part of the code that is committed to GIT!                                                              sap-no-debugger
+  66:9    error    Unexpected 'debugger' statement                                                                                                          no-debugger
+  66:18   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  67:26   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  68:29   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  69:11   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  70:16   warning  Make use of sap.ui.define([...], function(...) {...} to load required dependencies. Legacy UI5 factories leading to synchronous loading  sap-ui5-legacy-factories
+  70:29   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  71:54   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  72:49   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  73:33   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  74:12   error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  75:6    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+  76:4    error    Expected linebreaks to be 'LF' but found 'CRLF'                                                                                          linebreak-style
+
+/home/d050449/Documents/ca.infra.testapp/webapp/migration-test/testfile-sap-no-hardcoded-color.js
+   1:8    warning  'dummy' is assigned a value but never used                          no-unused-vars
+   1:16   error    Hardcoded colors are not allowed as they will break theming effort  sap-no-hardcoded-color
+   1:139  error    Missing semicolon                                                   semi
+   9:29   warning  'Logger' is not defined                                             no-undef
+  10:25   warning  Strings must use doublequote                                        quotes
+  11:36   warning  'Logger' is not defined                                             no-undef
+  12:25   warning  Strings must use doublequote                                        quotes
+  13:36   warning  'Logger' is not defined                                             no-undef
+  14:25   warning  Strings must use doublequote                                        quotes
+  15:36   warning  'Logger' is not defined                                             no-undef
+  16:25   warning  Strings must use doublequote                                        quotes
+  17:36   warning  'Logger' is not defined                                             no-undef
+  18:25   warning  Strings must use doublequote                                        quotes
+  20:25   warning  Strings must use doublequote                                        quotes
+  25:95   warning  'getLevelStr' is not defined                                        no-undef
+
+/home/d050449/Documents/ca.infra.testapp/webapp/model/formatter.js
+  23:9  warning  'regexFinder1' is assigned a value but never used  no-unused-vars
+  28:4  warning  Missing JSDoc for parameter 'sCompanyCode'         valid-jsdoc
+  34:7  warning  Duplicate JSDoc parameter 'sFiscalYear'            valid-jsdoc
+
+/home/d050449/Documents/ca.infra.testapp/webapp/testfilesversion40.js
+  1:1  warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy  sap-ui5-legacy-jquerysap-usage
+  3:1  warning  Legacy jQuery.sap usage is not allowed due to strict Content Security Policy  sap-ui5-legacy-jquerysap-usage
+
+✖ 327 problems (91 errors, 236 warnings)
+  77 errors and 66 warnings potentially fixable with the `--fix` option.
+

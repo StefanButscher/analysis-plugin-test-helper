@@ -74,21 +74,21 @@ var eslintRuleNameToAnalysisName = map[string]string{
 var timestamp = time.Now().Format("20060102-150405")
 
 var RULES_TO_BE_TEST = []string{
-	//"sap-no-debugger", // +
-	//"sap-no-origin",   // +
-	// "sap-not-localized", // +
-	// "sap-concatenated-strings", // +
-	"sap-no-hardcoded-color", //+ elsint works when adding a color code like #cccccc, Analysis plugin doe not find the issue
-	//"sap-no-window-alert", //- ESLINT ok with no-alert, Analysis Plugin A issue ->only no-alert works, ticket needed
-	// "sap-no-console-log", // +
-	//"sap-no-eval", //-  only    no-eval works with eslint -> same issue ticket
-	// "sap-no-ui5base-prop", //+
-	// "sap-unescaped-write", // +
-	//"sap-controller-hook-missing-callback-signature", // eslint works when removing annotation @callback sap.ca.scfld.md.controller.BaseDetailController~onDataReceived //Analiysi plugin fails
-	//"sap-controller-hook-bad-callback-signature", // eslint passes, Analysis plugin fails
-	// "sap-no-localstorage", // +
-	// "sap-no-upload", //- missing in configure.eslintrc //- did not pass with original file // passes with file from eslint plugin
-	//"sap-controller-hook-name-convention", // + Eslint  ok, analysis plugin a fail
+	"sap-no-debugger",                                // +
+	"sap-no-origin",                                  // +
+	"sap-not-localized",                              // +
+	"sap-concatenated-strings",                       // +
+	"sap-no-hardcoded-color",                         //+ elsint works when adding a color code like #cccccc, Analysis plugin doe not find the issue
+	"sap-no-window-alert",                            //- ESLINT ok with no-alert, Analysis Plugin A issue ->only no-alert works, ticket needed
+	"sap-no-console-log",                             // +
+	"sap-no-eval",                                    //-  only    no-eval works with eslint -> same issue ticket
+	"sap-no-ui5base-prop",                            //+
+	"sap-unescaped-write",                            // +
+	"sap-controller-hook-missing-callback-signature", // eslint works when removing annotation @callback sap.ca.scfld.md.controller.BaseDetailController~onDataReceived //Analiysi plugin fails
+	"sap-controller-hook-bad-callback-signature",     // eslint passes, Analysis plugin fails
+	"sap-no-localstorage",                            // +
+	"sap-no-upload",                                  //- missing in configure.eslintrc //- did not pass with original file // passes with file from eslint plugin
+	"sap-controller-hook-name-convention",            // + Eslint  ok, analysis plugin a fail
 }
 
 var dateTime = time.Now().Format("02 Jan 06 15:04 MST")
