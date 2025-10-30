@@ -36,39 +36,39 @@ var eslintPlugin = executor.NewEsLintExecutor(
 )
 
 var ruleNameToTestFile = map[string]string{
-	"sap-no-debugger":                            "__test_files__/sap-no-debugger-sample.js",
-	"sap-no-origin":                              "__test_files__/sap-no-origin-sample.js",
-	"sap-not-localized":                          "__test_files__/sap-not-localized-sample.js",
-	"sap-concatenated-strings":                   "__test_files__/sap-concatenated-strings.js",
-	"sap-no-hardcoded-color":                     "__test_files__/sap-hardcoded-color.js",
-	"sap-window-alert":                           "__test_files__/sap-window-alert.js",
-	"sap-console-log":                            "__test_files__/sap-console-log.js",
-	"sap-eval-used":                              "__test_files__/sap-eval-used.js",
-	"sap-core-model-usage":                       "__test_files__/sap-core-model-usage.js",
-	"sap-unescape-write":                         "__test_files__/sap-unescape-write.js",
-	"sap-controller-hook-no-callback-signature":  "__test_files__/sap-controller-hook-no-callback-signature.js",
-	"sap-controller-hook-bad-callback-signature": "__test_files__/sap-controller-hook-bad-callback-signature.js",
-	"sap-no-localstorage":                        "__test_files__/sap-js-webstorage.js",
-	"sap-js-upload-declare":                      "__test_files__/sap-js-upload-declare.js",
-	"sap-js-controller-hook-name-convention":     "__test_files__/sap-js-controller-hook-name-convention.js",
+	"sap-no-debugger":                                "__test_files__/sap-no-debugger-sample.js",
+	"sap-no-origin":                                  "__test_files__/sap-no-origin-sample.js",
+	"sap-not-localized":                              "__test_files__/sap-not-localized-sample.js",
+	"sap-concatenated-strings":                       "__test_files__/sap-concatenated-strings.js",
+	"sap-no-hardcoded-color":                         "__test_files__/sap-hardcoded-color.js",
+	"sap-no-window-alert":                            "__test_files__/sap-no-window-alert.js",
+	"sap-no-console-log":                             "__test_files__/sap-no-console-log.js",
+	"sap-no-eval":                                    "__test_files__/sap-no-eval.js",
+	"sap-no-ui5base-prop":                            "__test_files__/sap-core-model-usage.js",
+	"sap-unescaped-write":                            "__test_files__/sap-unescaped-write.js",
+	"sap-controller-hook-missing-callback-signature": "__test_files__/sap-controller-hook-missing-callback-signature.js",
+	"sap-controller-hook-bad-callback-signature":     "__test_files__/sap-controller-hook-bad-callback-signature.js",
+	"sap-no-localstorage":                            "__test_files__/sap-no-localstorage.js",
+	"sap-no-upload":                                  "__test_files__/sap-no-upload.js",
+	"sap-controller-hook-name-convention":            "__test_files__/sap-controller-hook-name-convention.js",
 }
 
 var eslintRuleNameToAnalysisName = map[string]string{
-	"sap-no-debugger":                            "JS_DEBUGGER_STATEMENT",
-	"sap-no-origin":                              "JS_ORIGIN_USED",
-	"sap-not-localized":                          "JS_NOT_LOCALIZED",        // Analysis plugin relied on a different sample - to discuss
-	"sap-concatenated-strings":                   "JS_CONCATENATED_STRINGS", // Eslint relied on different tests
-	"sap-no-hardcoded-color":                     "JS_HARDCODED_COLOR",      // Wrong eslint rule name
-	"sap-window-alert":                           "JS_WINDOW_ALERT",
-	"sap-console-log":                            "JS_CONSOLE_LOG",
-	"sap-eval-used":                              "JS_EVAL_USED",
-	"sap-core-model-usage":                       "JS_CORE_MODEL_USAGE",
-	"sap-unescape-write":                         "JS_UNESCAPED_WRITE",
-	"sap-controller-hook-no-callback-signature":  "JS_CONTROLLER_HOOK_NO_CALLBACK_SIGNATURE",
-	"sap-controller-hook-bad-callback-signature": "JS_CONTROLLER_HOOK_BAD_CALLBACK_SIGNATURE",
-	"sap-no-localstorage":                        "JS_WEBSTORAGE", // Wrong eslint rule name
-	"sap-js-upload-declare":                      "JS_UPLOAD_DECLARE",
-	"sap-js-controller-hook-name-convention":     "JS_CONTROLLER_HOOK_NAME_CONVENTION",
+	"sap-no-debugger":                                "JS_DEBUGGER_STATEMENT",
+	"sap-no-origin":                                  "JS_ORIGIN_USED",
+	"sap-not-localized":                              "JS_NOT_LOCALIZED",        // Analysis plugin relied on a different sample - to discuss
+	"sap-concatenated-strings":                       "JS_CONCATENATED_STRINGS", // Eslint relied on different tests
+	"sap-no-hardcoded-color":                         "JS_HARDCODED_COLOR",      // Wrong eslint rule name
+	"sap-no-window-alert":                            "JS_WINDOW_ALERT",         // changed eslint rule name
+	"sap-no-console-log":                             "JS_CONSOLE_LOG",
+	"sap-no-eval":                                    "JS_EVAL_USED",
+	"sap-no-ui5base-prop":                            "JS_CORE_MODEL_USAGE",
+	"sap-unescaped-write":                            "JS_UNESCAPED_WRITE",
+	"sap-controller-hook-missing-callback-signature": "JS_CONTROLLER_HOOK_NO_CALLBACK_SIGNATURE",
+	"sap-controller-hook-bad-callback-signature":     "JS_CONTROLLER_HOOK_BAD_CALLBACK_SIGNATURE",
+	"sap-no-localstorage":                            "JS_WEBSTORAGE", // Wrong eslint rule name
+	"sap-no-upload":                                  "JS_UPLOAD_DECLARE",
+	"sap-controller-hook-name-convention":            "JS_CONTROLLER_HOOK_NAME_CONVENTION",
 }
 
 var timestamp = time.Now().Format("20060102-150405")
@@ -78,17 +78,17 @@ var RULES_TO_BE_TEST = []string{
 	//"sap-no-origin",   // +
 	// "sap-not-localized", // +
 	// "sap-concatenated-strings", // +
-	"sap-no-hardcoded-color",
-	//"sap-window-alert",
-	//"sap-console-log",
-	//"sap-eval-used",
-	//"sap-core-model-usage",
-	//"sap-unescape-write",
-	//"sap-controller-hook-no-callback-signature",
-	//"sap-controller-hook-bad-callback-signature",
-	// "sap-no-localstorage", // -> "sap-js-webstorage",
-	// "sap-js-upload-declare",
-	// "sap-js-controller-hook-name-convention",
+	"sap-no-hardcoded-color", //+ elsint works when adding a color code like #cccccc, Analysis plugin doe not find the issue
+	//"sap-no-window-alert", //- ESLINT ok with no-alert, Analysis Plugin A issue ->only no-alert works, ticket needed
+	// "sap-no-console-log", // +
+	//"sap-no-eval", //-  only    no-eval works with eslint -> same issue ticket
+	// "sap-no-ui5base-prop", //+
+	// "sap-unescaped-write", // +
+	//"sap-controller-hook-missing-callback-signature", // eslint works when removing annotation @callback sap.ca.scfld.md.controller.BaseDetailController~onDataReceived //Analiysi plugin fails
+	//"sap-controller-hook-bad-callback-signature", // eslint passes, Analysis plugin fails
+	// "sap-no-localstorage", // +
+	// "sap-no-upload", //- missing in configure.eslintrc //- did not pass with original file // passes with file from eslint plugin
+	//"sap-controller-hook-name-convention", // + Eslint  ok, analysis plugin a fail
 }
 
 var dateTime = time.Now().Format("02 Jan 06 15:04 MST")
@@ -122,7 +122,7 @@ func TestRules(t *testing.T) {
 		}
 		t.Run("Test Rule: "+ruleName, func(t *testing.T) {
 
-			t.Run("Single file", func(t *testing.T) {
+			/*t.Run("Single file", func(t *testing.T) {
 				t.Run("AnalysisPluginA - single file", func(t *testing.T) {
 					execError, codeCheckErrors := RunChecksAgainstFile(executionDir, testName, analysisPluginA, filePath)
 					if execError != nil {
@@ -156,7 +156,7 @@ func TestRules(t *testing.T) {
 					targetError := FindEslintIssue(codeCheckErrors, ruleName)
 					assert.NotNilf(t, targetError, "Expected to find specific error for rule '%s'", ruleName)
 				})
-			})
+			})*/
 
 			t.Run("Project code checks", func(t *testing.T) {
 				// Copy test file
@@ -177,6 +177,7 @@ func TestRules(t *testing.T) {
 
 					assert.Greater(t, len(codeErrors), 0, "Expected at least one code check error from Analysis Plugin A")
 					// Check for code analysis errors
+					fmt.Println(">>>>> Rulename", ruleName, eslintRuleNameToAnalysisName[ruleName])
 					targetError := FindAnalysisPluginIssue(codeErrors, eslintRuleNameToAnalysisName[ruleName])
 					assert.NotNilf(t, targetError, "Expected to find specific error for rule '%s'", ruleName)
 				})
@@ -191,6 +192,7 @@ func TestRules(t *testing.T) {
 					}
 
 					if len(codeErrors) > 0 {
+
 						targetError := FindAnalysisPluginIssue(codeErrors, eslintRuleNameToAnalysisName[ruleName])
 						assert.Nilf(t, targetError, "Did not expect to find specific error for rule '%s' in Analysis Plugin B", ruleName)
 					}

@@ -64,6 +64,7 @@ func FindAnalysisPluginIssue(checkErrors []error, ruleName string) error {
 		if !ok {
 			continue
 		}
+
 		if strings.Contains(codeErr.RowText, "Quality issue") && strings.Contains(codeErr.RowText, ruleName) {
 			return err
 		}

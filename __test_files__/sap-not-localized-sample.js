@@ -14,7 +14,7 @@ sap.ui.core.UIComponent.extend("i2d.pp.prodorder.release.appref.Component", {
         // setText(incorrectRecurseMeXXerrorXX);
         // setText(incorrectStringValueXXerrorXX);
 
-        obj.setText('This is a hardcoded string');
+        obj.setText('This is a hardcoded string');  // to be discussed
         obj.setHeaderText('This is a hardcoded string');
         obj.setPurpose('This is a hardcoded string');
 

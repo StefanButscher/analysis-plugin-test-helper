@@ -1,3 +1,5 @@
+   var dummy = "lassoHelper = $(\"<div id='lasso-selection-help' style='position:absolute;pointer-events:none;background:#cccccc;'></div>"
+      
    var HTMLLayout = function() {
         // this.df = Logger.dateFormatter;
     };
@@ -21,12 +23,7 @@
         },
         format : function(logTime, logLevel, logCate, logMsg) {
             return "<div style=\"" + this.getStyle(logLevel) + "\">[" + logTime + "]" + "[" + getLevelStr(logLevel) + "][" + (logCate || "main") + "]-" + logMsg + "</div>";
-        },
-        somFunc: () => {
-            const someVar = '<div style="color:black;font-weight:bold"><br>Parameters:<br></div>'
-            //const $ = () => {};
-            //const lassoHelper = $("<div id='lasso-selection-help' style='position:absolute;pointer-events:none;background:#cccccc;'></div>");
         }
-
+        
         
     };

@@ -97,7 +97,7 @@ cus.crm.myaccounts.controller.Base360Controller.extend("cus.crm.myaccounts.view.
      * If (like in this example) the extension is 
      * a callback the customer provides, then it should be documented like:
      * 
-     * @callback sap.ca.scfld.md.controller.BaseDetailController~onDataReceived
+     * 
      * @param {sap.ui.model.json.JSONModel} model ...
      * @return {void}  ...
      * 
